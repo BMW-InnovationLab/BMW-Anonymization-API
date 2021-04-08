@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "required": [
+        "urls"
+    ],
+    "properties": {
+        "urls": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

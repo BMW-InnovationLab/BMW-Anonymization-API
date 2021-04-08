@@ -1,0 +1,11 @@
+{
+  "sensitive_info": [
+    {
+      "model_name": "sample_model",
+      "class_name": "person",
+      "anonymization_technique": "blackening",
+      "inference_type": "segmentation",
+      "anonymization_degree": 1
+    }
+  ]
+}

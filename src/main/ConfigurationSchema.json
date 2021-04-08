@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": 
+    {
+      "sensitive_info": 
+      {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": 
+            {
+              "model_name": 
+              {
+                "type": "string"
+              },
+              "class_name": 
+              {
+                "type": "string"
+              },
+              "anonymization_technique": 
+              {
+                "type": "string"
+              },
+              "inference_type": 
+              {
+                "type": "string"
+              },
+              "anonymization_degree": 
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "model_name",
+              "class_name",
+              "anonymization_technique",
+              "inference_type",
+              "anonymization_degree"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "sensitive_info"
+    ]
+}  

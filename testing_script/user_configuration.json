@@ -1,0 +1,11 @@
+{
+  "sensitive_info": [
+    {
+      "model_name": "yolo",
+      "class_name": "person",
+      "anonymization_technique": "blackening",
+      "inference_type": "detection",
+      "anonymization_degree": 1
+    }
+  ]
+}

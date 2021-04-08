@@ -1,0 +1,41 @@
+version: "2.3"
+services:
+  detection_api:
+    image: tensorflow_inference_api_cpu:latest
+    build:
+      context: ../BMW-TensorFlow-Inference-API-CPU
+      dockerfile: docker/dockerfile
+    volumes:
+      - ../BMW-TensorFlow-Inference-API-CPU/models:/models
+      - ../BMW-TensorFlow-Inference-API-CPU/models_hash:/models_hash
+    ports:
+      - "9998:4343"
+      
+  segmentation_api:
+    image: gluoncv_segmentation_inference_api_cpu:latest
+    build:
+      context: ../BMW-Semantic-Segmentation-Inference-API-GPU-CPU
+      dockerfile: CPU/dockerfile
+     
+    volumes:
+      - ../BMW-Semantic-Segmentation-Inference-API-GPU-CPU/models:/models
+      - ../BMW-Semantic-Segmentation-Inference-API-GPU-CPU/models_hash:/models_hash
+    runtime: nvidia
+    ports:
+      - "9999:4343"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=1
+      
+  anonymization:
+    image: anonymization_api:latest 
+    build:
+      context: .
+      dockerfile: docker/dockerfile
+    volumes:
+      - ./jsonFiles:/jsonFiles
+      - ./src/main:/main
+    ports:
+      - "9997:4343"
+    depends_on:
+      - detection_api
+      - segmentation_api

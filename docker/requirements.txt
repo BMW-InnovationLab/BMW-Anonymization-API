@@ -1,0 +1,10 @@
+moviepy
+aiofiles
+fastapi
+opencv-python
+jsonschema
+numpy
+python-multipart
+uvicorn
+Pillow
+requests
