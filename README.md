@@ -157,7 +157,7 @@ Anonymizes the input image based on the [user's JSON configuration file](https:/
 
 ##### /anonymize_video/ (POST)
 
-Anonymizes a video based on the user's sensitive info and save the anonymized video in [src/main/anonymized_videos](https://github.com/BMW-InnovationLab/BMW-Anonymization-API/tree/master/src/main/anonymized_video) under <original_video_name>_TIMESTAMP.mp4
+Anonymizes a video based on the user's sensitive info and save the anonymized video in `src/main/anonymized_videos` under <original_video_name>_TIMESTAMP.mp4
 
 
 
