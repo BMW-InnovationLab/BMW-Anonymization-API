@@ -303,6 +303,6 @@ Antoine Charbel, [inmind.ai](https://inmind.ai/), Beirut, Lebanon
 
 Roy Anwar, BMW Innovation Lab, Munich, Germany
 
+Fady Dib, BMW Innovation Lab, Munich, Germany
+
 Jimmy Tekli, BMW Innovation Lab, Munich, Germany
-
-
