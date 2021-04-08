@@ -24,7 +24,7 @@ Our anonymization API receives an image along with a JSON object through which t
 ![](references/architecture_2.png) 
 
 You can deploy the anonymization API either:
-* As a standalone docker container which can be connected to other inference APIs ([detection](https://github.com/BMW-InnovationLab/BMW-YOLOv4-Inference-API-CPU) or [segmentation](https://github.com/BMW-InnovationLab/BMW-Semantic-Inference-GPU-CPU)) deployed within a standalone docker container as well.
+* As a standalone docker container which can be connected to other inference APIs ([detection](https://github.com/BMW-InnovationLab/BMW-YOLOv4-Inference-API-CPU) or [segmentation](https://github.com/BMW-InnovationLab/BMW-Semantic-Segmentation-Inference-API-GPU-CPU)) deployed within a standalone docker container as well.
 * As a network of docker containers along with other inference APIs running on the same machine via docker-compose. (please check the [following link](./docker_compose_readme.md) for the docker-compose deployment).
 
 
