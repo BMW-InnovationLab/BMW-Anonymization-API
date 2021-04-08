@@ -299,7 +299,7 @@ Please refer to the following link [add new technique documentation](references/
 
 Ghenwa Aoun, BMW Innovation Lab, Munich, Germany
 
-Antoine Charbel, [Antonine University](https://ua.edu.lb/french/home) / [inmind.ai](https://inmind.ai/), Beirut, Lebanon
+Antoine Charbel, [inmind.ai](https://inmind.ai/), Beirut, Lebanon
 
 Roy Anwar, BMW Innovation Lab, Munich, Germany
 
