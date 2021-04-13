@@ -1,0 +1,46 @@
+version: '3'
+services:
+
+  openvino_detection_api:
+    build: 
+      context: ../RCV-IntelOpenVino-Detection-API
+      dockerfile: Dockerfile
+    image: openvino_detection.api:latest
+    networks:
+      - anonym-net
+    ports:
+      - "8081:80"
+    volumes:
+      - "../RCV-IntelOpenVino-Detection-API/models:/models"
+      - "../RCV-IntelOpenVino-Detection-API/models_hash:/models_hash"
+
+  openvino_segmentation_api:
+    build: 
+      context: ../BMW-IntelOpenVINO-Segmentation-Inference-API
+      dockerfile: docker/Dockerfile
+    image: openvino_segmentation.api:latest
+    networks:
+      - anonym-net
+    ports:
+      - "8090:80"
+    volumes:
+      - "../BMW-IntelOpenVINO-Segmentation-Inference-API/models:/models"
+      - "../BMW-IntelOpenVINO-Segmentation-Inference-API/models_hash:/models_hash"
+      
+  anonymization_api:
+    image: anonymize.api:latest
+    build: 
+      context: .
+      dockerfile: docker/dockerfile
+    networks:
+      - anonym-net
+    ports:
+      - "8070:4343"
+    volumes:
+      - "./jsonFiles:/jsonFiles"
+    depends_on:
+      - openvino_detection_api
+      - openvino_segmentation_api
+
+networks: 
+  anonym-net:
