@@ -27,7 +27,7 @@ The folder structure should be similar to as shown below:
   |──...
   │──docs  
   │──Readme.md
-│──BMW-IntelOpenVINO-Inference-API 
+│──BMW-IntelOpenVINO-Detection-Inference-API
   │──docker 
   |──...
   │──docs  
