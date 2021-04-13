@@ -1,0 +1,1 @@
+{"urls": ["http://openvino_detection_api:80/", "http://openvino_segmentation_api:80/"]}
