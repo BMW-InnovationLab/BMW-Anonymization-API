@@ -4,7 +4,7 @@ In this section, docker compose will build and run a network of containers inclu
 
 ## Build and Run the network
 
-In order to build and run all the APIs together, copy all APIs project repositories to the machine you wish to infer on and modify the following:
+In order to build and run all the APIs together, clone all APIs project repositories into the same directory and modify the following:
 
 In the anonymization API directory go to "/docker-compose.yml"
 
