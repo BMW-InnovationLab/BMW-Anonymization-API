@@ -89,4 +89,5 @@ If you wish to deploy other inference APIs, please make sure to the docker-compo
 - Modify the ports and choose the ones you wish to use for each API
 - In case you are setting up a GPU-based inference API, do not forget to set the runtime entry as "nvidia" 
 
+We provided a sample docker-compose file  `./BMW-Anonymization-API/docker-compose_tf_gluoncv.yml`
 
