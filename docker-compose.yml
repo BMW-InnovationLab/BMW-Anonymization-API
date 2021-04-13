@@ -3,7 +3,7 @@ services:
 
   openvino_detection_api:
     build: 
-      context: ../RCV-IntelOpenVino-Detection-API
+      context: ../BMW-IntelOpenVINO-Inference-API
       dockerfile: Dockerfile
     image: openvino_detection.api:latest
     networks:
@@ -11,8 +11,8 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - "../RCV-IntelOpenVino-Detection-API/models:/models"
-      - "../RCV-IntelOpenVino-Detection-API/models_hash:/models_hash"
+      - "../BMW-IntelOpenVINO-Inference-API/models:/models"
+      - "../BMW-IntelOpenVINO-Inference-API/models_hash:/models_hash"
 
   openvino_segmentation_api:
     build: 
