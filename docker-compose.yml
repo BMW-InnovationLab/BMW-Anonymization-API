@@ -38,6 +38,7 @@ services:
       - "8070:4343"
     volumes:
       - "./jsonFiles:/jsonFiles"
+      - "./src/main/anonymized_video/:/main/anonymized_video"
     depends_on:
       - openvino_detection_api
       - openvino_segmentation_api
