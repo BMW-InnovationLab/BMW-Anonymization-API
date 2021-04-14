@@ -33,7 +33,7 @@ services:
       dockerfile: docker/dockerfile
     volumes:
       - ./jsonFiles:/jsonFiles
-      - ./src/main:/main
+      - ./src/main/anonymized_video:/main/anonymized_video
     ports:
       - "9997:4343"
     depends_on:
