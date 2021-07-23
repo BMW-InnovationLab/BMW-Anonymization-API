@@ -298,12 +298,12 @@ Please refer to the following link [add new technique documentation](references/
 
 ## Acknowledgments
 
-Ghenwa Aoun, BMW Innovation Lab, Munich, Germany
+Ghenwa Aoun
 
 Antoine Charbel, [inmind.ai](https://inmind.ai/), Beirut, Lebanon
 
-Roy Anwar, BMW Innovation Lab, Munich, Germany
+Roy Anwar
 
-Fady Dib, BMW Innovation Lab, Munich, Germany
+Fady Dib
 
 Jimmy Tekli, BMW Innovation Lab, Munich, Germany
