@@ -237,7 +237,7 @@ Please refer to the following link [add new technique documentation](references/
 
 ### Object Detection with OpenVINO model and Intel Core i7-1185G7 
 
-The model was trained with the TensorFlow Object Detection API (TF version 1.14) and then converted to OpenVINO IR.
+The model was trained with the TensorFlow Object Detection API (TF version 1.14) and then converted to OpenVINO IR using [Intel&reg; OpenVINO&trade; toolkit v2021.4](https://docs.openvinotoolkit.org/latest/index.html)
 
 |**CPU**|**Network**  |**Precision** |**Width**  |**Height**  |**Inference Time (s)**  |**Anonymization Time (s)** |**Total Time (s)** <br/> for Average, Maximum, Minimum|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
