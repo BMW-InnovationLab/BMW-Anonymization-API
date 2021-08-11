@@ -247,4 +247,4 @@ Jimmy Tekli, BMW Innovation Lab, Munich, Germany
 
 [intel.com](https://intel.com)
 
-[Robotron] (https://www.robotron.de/produkte/rcv)
+[robotron.de](https://www.robotron.de)
