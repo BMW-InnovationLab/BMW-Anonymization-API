@@ -194,59 +194,13 @@ Please refer to the following link [add new technique documentation](references/
 |Titan RTX  |  yolov4 |  2048 | 1024| 1.2  |0.6  |1.8 |
 |Titan RTX  |  yolov4 |  3840 | 2160| 4.8  |0.6  |5.4 |
 
-<table>                                                                 
-    <tr>
-        <th>GPU</th>
-        <th>Network</th>
-        <th>Width</th>
-        <th>Height</th>
-        <th>Inference time</th>
-        <th>Anonymization time</th>
-        <th>Total</th>
-    </tr>
-    <tr>
-        <td align = "center">Titan RTX</td>
-        <td align = "center">yolov4</td>
-        <td align = "center">640</td>
-        <td align = "center">768</td>
-        <td align = "center">0.2 s</td>
-        <td align = "center">0.07 s</td>
-        <td align = "center">0.27 s</td>
-    </tr>
-    <tr>
-        <td align = "center">Titan RTX</td>
-        <td align = "center">yolov4</td>
-        <td align = "center">1024</td>
-        <td align = "center">768</td>
-        <td align = "center">0.4 s</td>
-        <td align = "center">0.14 s</td>
-        <td align = "center">0.54 s</td>
-    </tr>
-    <tr>
-        <td align = "center">Titan RTX</td>
-        <td align = "center">yolov4</td>
-        <td align = "center">2048</td>
-        <td align = "center">1024</td>
-        <td align = "center">1.2 s</td>
-        <td align = "center">0.6 s</td>
-        <td align = "center">1.8 s</td>
-    </tr>
-    <tr>
-        <td align = "center">Titan RTX</td>
-        <td align = "center">yolov4</td>
-        <td align = "center">3840</td>
-        <td align = "center">2160</td>
-        <td align = "center">4.8 s</td>
-        <td align = "center">0.6 s</td>
-        <td align = "center">5.4 s</td>
-    </tr>
-</table>
+
 
 ### Object Detection with OpenVINO model and Intel Core i7-1185G7 
 
 The model was trained with the TensorFlow Object Detection API (TF version 1.14) and then converted to OpenVINO IR using [Intel&reg; OpenVINO&trade; toolkit v2021.4](https://docs.openvinotoolkit.org/latest/index.html)
 
-|**CPU**|**Network**  |**Precision** |**Width**  |**Height**  |**Inference Time (s)**  |**Anonymization Time (s)** |**Total Time (s)** <br/> for Average, Maximum, Minimum|
+|**CPU**|**Network**  |**Precision** |**Width**  |**Height**  |**Inference Time (s)**  |**Anonymization Time (s)** |**Total Time (s)** <br/> for Avg, Max, Min|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |Intel Core <br/> i7-1185G7  |  Faster R-CNN  <br/> Input Shape: [3,600,600]  |  FP32 | 1024| 768  |0.51  |0.09  |0.60, 0.67, 0.54  |
 |Intel Core <br/> i7-1185G7  |  Faster R-CNN  <br/> Input Shape: [3,600,600] |  FP32  | 2048 | 1536  |0.56  |0.24  |0.80,  0.97, 0.70  |
