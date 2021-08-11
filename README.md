@@ -187,6 +187,13 @@ Please refer to the following link [add new technique documentation](references/
 
 ### Object Detection
 
+|**GPU**|**Network**  |**Width**  |**Height**  |**Inference Time (s)**  |**Anonymization Time (s)** |**Total Time (s)** |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|Titan RTX  |  yolov4 |  640 | 768| 0.2  |0.07  |0.27 |
+|Titan RTX  |  yolov4 |  1024 | 768| 0.4  |0.14  |0.54 |
+|Titan RTX  |  yolov4 |  2048 | 1024| 1.2  |0.6  |1.8 |
+|Titan RTX  |  yolov4 |  3840 | 2160| 4.8  |0.6  |5.4 |
+
 <table>                                                                 
     <tr>
         <th>GPU</th>
