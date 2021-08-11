@@ -235,6 +235,18 @@ Please refer to the following link [add new technique documentation](references/
     </tr>
 </table>
 
+### Object Detection with OpenVINO model and Intel Core i7-1185G7 
+
+The model was trained with the TensorFlow Object Detection API (TF version 1.14) and then converted to OpenVINO IR.
+
+|**CPU**|**Network**  |**Precision** |**Width**  |**Height**  |**Inference Time (s)**  |**Anonymization Time (s)** |**Total Time (s)** <br/> for Average, Maximum, Minimum|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|Intel Core <br/> i7-1185G7  |  Faster R-CNN  <br/> Input Shape: [3,600,600]  |  FP32 | 1024| 768  |0.51  |0.09  |0.60, 0.67, 0.54  |
+|Intel Core <br/> i7-1185G7  |  Faster R-CNN  <br/> Input Shape: [3,600,600] |  FP32  | 2048 | 1536  |0.56  |0.24  |0.80,  0.97, 0.70  |
+|Intel Core <br/> i7-1185G7  |  Faster R-CNN  <br/> Input Shape: [3,600,600]  |  INT8 | 1024| 768  |0.16  |0.09  |0.25, 0.27, 0.22  |
+|Intel Core <br/> i7-1185G7  |  Faster R-CNN  <br/> Input Shape: [3,600,600] |  INT8| 2048 | 1536  |0.19  |0.24  |0.43,  0.56, 0.36  |
+
+
 ### Semantic Segmentation
 <table>                                                                 
     <tr>
