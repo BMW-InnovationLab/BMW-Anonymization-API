@@ -209,53 +209,15 @@ The model was trained with the TensorFlow Object Detection API (TF version 1.14)
 
 
 ### Semantic Segmentation
-<table>                                                                 
-    <tr>
-        <th>GPU</th>
-        <th>Network</th>
-        <th>Width</th>
-        <th>Height</th>
-        <th>Inference time</th>
-        <th>Anonymization time</th>
-        <th>Total</th>
-    </tr>
-    <tr>
-        <td align = "center">Titan RTX</td>
-        <td align = "center">psp resnet 101</td>
-        <td align = "center">640</td>
-        <td align = "center">768</td>
-        <td align = "center">0.2 s</td>
-        <td align = "center">0.8 s</td>
-        <td align = "center">1 s</td>
-    </tr>
-    <tr>
-        <td align = "center">Titan RTX</td>
-        <td align = "center">psp resnet 101</td>
-        <td align = "center">1024</td>
-        <td align = "center">768</td>
-        <td align = "center">0.3 s</td>
-        <td align = "center">0.8 s</td>
-        <td align = "center">1.1 s</td>
-    </tr>
-    <tr>
-        <td align = "center">Titan RTX</td>
-        <td align = "center">psp resnet 101</td>
-        <td align = "center">2048</td>
-        <td align = "center">1024</td>
-        <td align = "center">0.9 s</td>
-        <td align = "center">1 s</td>
-        <td align = "center">1.9 s</td>
-    </tr>
-    <tr>
-        <td align = "center">Titan RTX</td>
-        <td align = "center">psp resnet 101</td>
-        <td align = "center">3840</td>
-        <td align = "center">2160</td>
-        <td align = "center">2 s</td>
-        <td align = "center">3 s</td>
-        <td align = "center">5 s</td>
-    </tr>
-</table>
+
+|**GPU**|**Network**  |**Width**  |**Height**  |**Inference Time (s)**  |**Anonymization Time (s)** |**Total Time (s)** |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|Titan RTX  |  psp resnet 101 |  640 | 768| 0.2  |0.8 |1.1 |
+|Titan RTX  |  psp resnet 101 |  1024 | 768| 0.3  |0.8  |1.1 |
+|Titan RTX  |  psp resnet 101 |  2048 | 1024| 0.9  |1.0  |1.9 |
+|Titan RTX  |  psp resnet 101 |  3840 | 2160| 2.0  |3.0  |5.0 |
+
+
 
 ## Possible Error
 
@@ -280,3 +242,9 @@ Roy Anwar
 Fady Dib
 
 Jimmy Tekli, BMW Innovation Lab, Munich, Germany
+
+[OpenVINO Toolkit](https://github.com/openvinotoolkit)
+
+[intel.com](https://intel.com)
+
+[Robotron] (https://www.robotron.de/produkte/rcv)
