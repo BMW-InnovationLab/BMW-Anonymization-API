@@ -75,10 +75,6 @@ In order to build the image behind a proxy use the following command in the proj
 ```sh
 docker build --build-arg http_proxy='your_proxy' --build-arg https_proxy='your_proxy' -t anonymization_api -f ./docker/dockerfile .
 ```
-In case of build failure, the docker image python:3.6 should be updated to a newer version:
-```sh
-docker pull python:3.6
-```
 
 ## Run the docker container
 
