@@ -2,7 +2,7 @@
 
 In this section, docker compose will build and run a network of containers including the Anonymization API alongside multiple inference APIs.
 
-In the following section, we encapsulate the [BMW-IntelOpenVINO-Inference-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Inference-API) and the [BMW-IntelOpenVINO-Segmentation-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Segmentation-API) with our anonymization API. 
+In the following section, we encapsulate the [BMW-IntelOpenVINO-Inference-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Inference-API) and the [BMW-IntelOpenVINO-Segmentation-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Segmentation-Inference-API) with our anonymization API. 
 
 These two inference APIs contain example models optimzed via OpenVINO. Other OpenVINO models in Intermediate Representation(IR) format, converted via the [Intel&reg; OpenVINO&trade; toolkit v2021.1](https://docs.openvinotoolkit.org/latest/index.html), can be deployed with our APIs. Currently, OpenVINO supports conversion for DL-based models trained via several Machine Learning frameworks including Caffe, Tensorflow etc. Please refer to [the OpenVINO documentation](https://docs.openvinotoolkit.org/2021.1/openvino_docs_MO_DG_prepare_model_convert_model_Converting_Model.html) for further details on converting your Model.
 
@@ -11,7 +11,7 @@ These two inference APIs contain example models optimzed via OpenVINO. Other Ope
 
 In this section, docker compose will build and run a network of containers including the Anonymization API alongside the OpenVINO inference APIs for detection and segmentation. The instructions are provided below. 
 
-To run the APIs together, clone the [BMW-Anonymization-API](https://github.com/BMW-InnovationLab/BMW-Anonymization-API), the [BMW-IntelOpenVINO-Inference-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Inference-API) and the [BMW-IntelOpenVINO-Segmentation-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Segmentation-API) into the same directory.
+To run the APIs together, clone the [BMW-Anonymization-API](https://github.com/BMW-InnovationLab/BMW-Anonymization-API), the [BMW-IntelOpenVINO-Inference-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Inference-API) and the [BMW-IntelOpenVINO-Segmentation-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Segmentation-Inference-API) into the same directory.
 
 The folder structure should be similar to as shown below:
 
@@ -37,7 +37,7 @@ The folder structure should be similar to as shown below:
 
 In the BMW-Anonymization API replace the `./BMW-Anonymization-API/jsonFiles/url_configuration.json` with the provided `./url_for_openvino_compose/url_configuration.json`.
 
-Three services are configured in the `docker-compose.yml` file in this repository: the [BMW-Anonymization-API](https://github.com/BMW-InnovationLab/BMW-Anonymization-API), the [BMW-IntelOpenVINO-Inference-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Inference-API) and the [BMW-IntelOpenVINO-Segmentation-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Segmentation-API). You can modify the build context to specify the base directories of the APIs (ensure the correct path is also given for the mounted volumes). You can also modify the host ports you wish to use for the APIs. 
+Three services are configured in the `docker-compose.yml` file in this repository: the [BMW-Anonymization-API](https://github.com/BMW-InnovationLab/BMW-Anonymization-API), the [BMW-IntelOpenVINO-Inference-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Inference-API) and the [BMW-IntelOpenVINO-Segmentation-API](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Segmentation-Inference-API). You can modify the build context to specify the base directories of the APIs (ensure the correct path is also given for the mounted volumes). You can also modify the host ports you wish to use for the APIs. 
 
 After you configure your docker-compose.yml file, you can run the following command in the anonymization API directory:
 
@@ -82,7 +82,7 @@ If you use the standard configuration of the `docker-compose.yml` the folllowing
 
 ## Using other inference APIs
 
-Other inference APIs can also be configured within the docker-compose.yml such as our [tensorflow CPU detection API](https://github.com/BMW-InnovationLab/BMW-TensorFlow-Inference-API-CPU) and [semantic segmentation CPU/GPU](https://github.com/BMW-InnovationLab/BMW-Semantic-Segmentation-Inference-API-GPU-CPU))
+Other inference APIs can also be configured within the docker-compose.yml such as our [tensorflow CPU detection API](https://github.com/BMW-InnovationLab/BMW-TensorFlow-Inference-API-CPU) and [semantic segmentation CPU/GPU](https://github.com/BMW-InnovationLab/BMW-IntelOpenVINO-Segmentation-Inference-API))
 If you wish to deploy other inference APIs, please make sure to the docker-compose.yml accordingly:
 - Modify the context in order to specify the base directory of each API
 - Modify the dockerfile entry to match the path of the dockerfile in the API directory 
