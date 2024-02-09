@@ -228,6 +228,29 @@ The model was trained with the TensorFlow Object Detection API (TF version 1.14)
     }
     ```
 
+## Citing
+
+If you use this repository in your research, consider citing it using the following Bibtex entries:
+```
+@inproceedings{Tekli2021DesigningAE,
+  title={Designing and evaluating anonymization techniques for images and relational data streams via Machine Learning approaches at BMW Group. (Conception et {\'e}valuation de techniques d'anonymisation des images et des flux de donn{\'e}es relationnels via des approches d'apprentissage automatique {\`a} BMW Group)},
+  author={Jimmy Tekli},
+  year={2021},
+  url={https://api.semanticscholar.org/CorpusID:266756928}
+}
+```
+and 
+```
+@misc{bmwanotool,
+  author = {BMW TechOffice MUNICH},
+  title = {BMW Anonymization Tool},
+  howpublished = {\url{https://github.com/BMW-InnovationLab/BMW-Anonymization-API}},
+  year = {2019},
+}
+```
+
+
+
 ## Acknowledgments
 
 Ghenwa Aoun
